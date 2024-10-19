@@ -1,0 +1,4 @@
+Flask
+Flask-CORS
+langchain_ollama
+requests
