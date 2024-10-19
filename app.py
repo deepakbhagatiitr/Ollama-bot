@@ -5,7 +5,7 @@ import time
 import re
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins
 
 def generate_response(input_text):
     model = ChatOllama(model="llama3.2:3b", base_url="http://localhost:11434/")
